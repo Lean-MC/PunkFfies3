@@ -1,0 +1,15 @@
+.Navbar ul{
+    list-style: none;
+    margin-top: 0;
+}
+.Navbar ul li{
+    display: inline-block;
+    padding: 20px;
+    }
+
+
+.Navbar{
+    background-color: aqua;
+    height: 50%;
+    width: 100%;
+}
