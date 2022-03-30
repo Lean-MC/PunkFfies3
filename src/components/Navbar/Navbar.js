@@ -1,14 +1,26 @@
 import './Navbar.css'
+import CartWidget from '../cartWidget/CartWidget'
+
 
 const Navbar = () => {
- return(
+    return(
      <nav className="Navbar">
-         <ul>
-             <li><h1>Punkffies</h1></li>
-             <li><button>Punkffies</button></li>
-             <li><button>Punkcakes</button></li>
-             <li><button>Punktres</button></li>
-         </ul>
+         <div>
+             <h3>Punkffies</h3>
+        </div>
+
+         <div>
+         <button>Punkffies</button>
+         <button>Punkcakes</button>
+         <button>Punktres</button>
+         </div>
+
+         <div>
+             <CartWidget />
+             
+        </div>
+        
+        
 
      </nav>
 )

@@ -1,18 +1,26 @@
 
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
+import ItemListContainer from './components/itemListContainer/ItemListContainer';
 
-function App() {
+
+
+
+const App = () => {
+
+  const props ={
+    title: 'Hola Coder',
+    props:'2'
+  }
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
+       <div className="App">
+      
       <Navbar />
-       </header>
-       <body className="App-body">
-         <h2>Si buscas Rock y cosas dulces es acá</h2>
-       </body>
-
-    </div>
+      <ItemListContainer {...props}/>
+      </div>
   );
 }
 
