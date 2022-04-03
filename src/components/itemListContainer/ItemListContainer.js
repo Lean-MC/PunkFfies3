@@ -1,9 +1,28 @@
+import React,{useState} from "react";
+import ItemCount from "../ItemCount/ItemCount"
+
 const ItemListContainer = (props) => {
+   const [count,setCount] = useState(1);
+
+   const onAdd = (condition) => {
+       if (condition === '-'){
+           setCount(count - 1);
+       } 
+       if (condition === '+'){
+        setCount(count + 1);
+       }
+    };
+   const stock = 6;
+   const initial = 3;
     
-    console.log(props)
+    
     return(
-        <h1>{props.title}</h1>
-    )
-}
+        
+        <div>
+            <ItemCount onAdd={onAdd} stock={stock} initial={initial} count={count}/>
+        </div>
+    );
+
+};
 
 export default ItemListContainer
